@@ -20,6 +20,10 @@ public class DNA{
             if(s.charAt(i)=='A') {
             	a+="U";
             }
+	    else {
+            	System.out.println("Wrong Input");
+            	break;
+            }
     }
         System.out.print(a);
     }
