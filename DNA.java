@@ -8,23 +8,29 @@ public class DNA{
         String a="";
         for(int i=0;i<n;i++)
         {
-            if(s.charAt(i)=='G') {
-            	a+="C";
+        	char ch=s.charAt(i);
+        	if(!(ch=='A'||ch=='C'||ch=='T'||ch=='A')) {
+        		a="Invalid Input";
+        		break;}
+        	
+        	else {	
+            if(ch=='G') {
+            	a+='C';
             }
-            if(s.charAt(i)=='C') {
-            	a+="G";
+            if(ch=='C') {
+            	a+='G';
             }
-            if(s.charAt(i)=='T') {
-            	a+="A";
+            if(ch=='T') {
+            	a+='A';
             }
-            if(s.charAt(i)=='A') {
-            	a+="U";
+            if(ch=='A') {
+            	a+='U';
             }
-	    else {
-            	System.out.println("Wrong Input");
-            	break;
-            }
+            
     }
+        }
         System.out.print(a);
-    }
+
+	}
+
 }
