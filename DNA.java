@@ -9,7 +9,7 @@ public class DNA{
         for(int i=0;i<n;i++)
         {
         	char ch=s.charAt(i);
-        	if(!(ch=='A'||ch=='C'||ch=='T'||ch=='A')) {
+        	if(!(ch=='G'||ch=='C'||ch=='T'||ch=='A')) {
         		a="Invalid Input";
         		break;}
         	
