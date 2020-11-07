@@ -24,7 +24,7 @@ public class Additional_Question {
 			System.out.println("Travlling Wasted");
 		}
 			else
-		System.out.print("initial position is (0,0) and final position is "+(hp+ "," +vp));
+		System.out.print(Math.abs(hp)+Math.abs(vp)+" Steps");
 		
 			
 	}
